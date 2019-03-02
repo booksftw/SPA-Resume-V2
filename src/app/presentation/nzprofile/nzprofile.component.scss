@@ -1,0 +1,134 @@
+.nz-photo-container{
+    width: 196px;
+    height: 224px;
+    border-radius: 50%;
+    overflow: hidden;
+    background: none;
+    margin: 0 auto;
+    // box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.3);
+}
+
+div#nzprofile {
+    .description, .title, .icon, .icon-warning, h5.info-title, .mat-tab-label .mat-tab-label-content {
+        font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
+        color:grey;
+    }
+
+    .mat-tab-group{
+        width: 572px;
+    }
+
+    .mat-tab-label {
+        border: 2px solid black;
+        height: 125px;
+        justify-content: space-between;
+        border-radius: 50%;
+    }
+
+    .mat-tab-label-content{
+        margin: 0 auto;
+    }
+    
+    .now-ui-icons{
+        font-size:65px;
+    }
+
+    .card-description, .mat-tab-body-content{
+        color: rgb(179, 179, 179);
+        font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
+    }
+
+    .nz-center-tab-group{
+        width: 520px;
+        margin: 0 auto;
+    }
+    // Media Queries
+
+@media (max-width: 768px){
+
+}
+
+
+@media screen and (min-width: 991px){
+
+}
+
+@media screen and (max-width: 576px){
+    .nz-center-tab-group{
+        width: 282px;
+        margin: 0 auto;
+    }
+    div#nzprofile .nz-center-tab-group {
+        width: fit-content;
+    }
+}
+
+// Iphone Responsive
+@media only screen 
+and (min-device-width : 375px)
+and (max-device-width : 667px) {
+
+}
+
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 667px)
+and (orientation : portrait) {
+
+}
+
+
+@media screen and (max-width: 768px) and (min-width:576px) {
+
+}
+
+@media screen and (max-width: 991px) and (min-width: 768px) {
+
+}
+
+@media screen and (min-width: 768px) {
+
+}
+
+@media (max-width: 991px){
+
+}
+
+// Ipad Responsive
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px) {
+
+}
+
+
+// Ipad responsive portrait mode
+@media only screen {
+
+}
+
+
+@media (max-width: 768px){
+
+}
+
+@media screen and (max-width: 767px) {
+
+}
+
+@media screen and (min-width: 768px) {
+
+}
+
+@media screen and (max-width: 576px) {
+
+}
+
+@media screen and (max-width: 991px) {
+
+}
+
+@media (max-width:1200px) and (min-width:991px) {
+
+}
+}

@@ -1,10 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import * as Rellax from 'rellax';
 
 @Component({
   selector: 'app-nzprofile',
   templateUrl: './nzprofile.component.html',
-  styleUrls: ['./nzprofile.component.scss']
+  styleUrls: ['./nzprofile.component.scss'],
+  encapsulation: ViewEncapsulation.None
 })
 export class NzprofileComponent implements OnInit {
 

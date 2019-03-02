@@ -8,13 +8,20 @@ import { RouterModule } from '@angular/router';
 import { PresentationComponent } from './presentation.component';
 import { NzprofileComponent } from './nzprofile/nzprofile.component';
 
+import {MatTabsModule} from '@angular/material';
+import {MatIconModule} from '@angular/material/icon';
+import {MatButtonModule} from '@angular/material/button';
+
 @NgModule({
     imports: [
         CommonModule,
         BrowserModule,
         FormsModule,
         RouterModule,
-        NgbModule
+        NgbModule,
+        MatTabsModule,
+        MatIconModule,
+        MatButtonModule
     ],
     declarations: [ PresentationComponent, NzprofileComponent ],
     exports:[ PresentationComponent ],
