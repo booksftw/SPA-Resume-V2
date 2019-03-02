@@ -6,6 +6,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { RouterModule } from '@angular/router';
 
 import { PresentationComponent } from './presentation.component';
+import { NzprofileComponent } from './nzprofile/nzprofile.component';
 
 @NgModule({
     imports: [
@@ -15,7 +16,7 @@ import { PresentationComponent } from './presentation.component';
         RouterModule,
         NgbModule
     ],
-    declarations: [ PresentationComponent ],
+    declarations: [ PresentationComponent, NzprofileComponent ],
     exports:[ PresentationComponent ],
     providers: []
 })

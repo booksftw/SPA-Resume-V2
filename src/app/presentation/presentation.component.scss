@@ -1,0 +1,93 @@
+.nz-intro-header {
+    text-align: left;
+}
+
+
+
+// Media Queries
+
+@media (max-width: 768px){
+    .nz-intro-header{
+        font-size: 38px;
+    }
+}
+
+
+@media screen and (min-width: 991px){
+    .nz-intro-header{
+        font-size: 64px;
+    }
+}
+
+@media screen and (max-width: 576px){
+    
+}
+
+// Iphone Responsive
+@media only screen 
+and (min-device-width : 375px)
+and (max-device-width : 667px) {
+
+}
+
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 667px)
+and (orientation : portrait) {
+
+}
+
+
+@media screen and (max-width: 768px) and (min-width:576px) {
+
+}
+
+@media screen and (max-width: 991px) and (min-width: 768px) {
+
+}
+
+@media screen and (min-width: 768px) {
+
+}
+
+@media (max-width: 991px){
+
+}
+
+// Ipad Responsive
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px) {
+
+}
+
+
+// Ipad responsive portrait mode
+@media only screen {
+
+}
+
+
+@media (max-width: 768px){
+
+}
+
+@media screen and (max-width: 767px) {
+
+}
+
+@media screen and (min-width: 768px) {
+
+}
+
+@media screen and (max-width: 576px) {
+
+}
+
+@media screen and (max-width: 991px) {
+
+}
+
+@media (max-width:1200px) and (min-width:991px) {
+
+}

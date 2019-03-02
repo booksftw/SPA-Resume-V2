@@ -22,8 +22,8 @@ import { PricingComponent } from './examples/pricing/pricing.component';
 import { HomeComponent } from './components/home/home.component';
 
 const routes: Routes =[
-    { path: '', redirectTo: 'home', pathMatch: 'full' },
-    { path: 'home',         component: HomeComponent },
+    { path: '', redirectTo: 'presentation', pathMatch: 'full' },
+    // { path: 'home',         component: HomeComponent },
     { path: 'presentation',         component: PresentationComponent },
     { path: 'components',           component: ComponentsComponent },
     { path: 'sections',             component: SectionsComponent },
