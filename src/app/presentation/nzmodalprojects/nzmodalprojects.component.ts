@@ -14,7 +14,6 @@ export class NzmodalprojectsComponent {
 
   constructor(
       private modalService: NgbModal,
-      private router: Router
       ) {}
 
   open(content, type, modalDimension) {
@@ -50,8 +49,6 @@ export class NzmodalprojectsComponent {
   }
 
   redirect(link) {
-      console.log('redirect to' + link);
-    // this.router.navigateByUrl('https://github.com/booksftw/creative-realtime-board');
     // @ts-ignore
     window.location.href = link;
   }

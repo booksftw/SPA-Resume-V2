@@ -1,4 +1,4 @@
-<button class="btn btn-primary text-margin" (click)="open(classic,'' , '')">
+<!-- <button class="btn btn-primary text-margin" (click)="open(classic,'' , '')">
     <i class="now-ui-icons files_single-copy-04"></i> Classic
 </button>
 <ng-template #classic let-c="close" let-d="dismiss">
@@ -19,7 +19,7 @@
         <button type="button" class="btn btn-default">Nice Button</button>
         <button type="button" class="btn btn-danger" (click)="c('Close click')">Close</button>
     </div>
-</ng-template>
+</ng-template> -->
 
 
 <ng-template #realtimewhiteboard let-c="close" let-d="dismiss">
@@ -64,22 +64,144 @@
     </div>
 </ng-template>
 
-<div class="container-fluid">
-    <div class="section-cols">
-        <div class="row">
-            <div class="col-md-3 btn btn-primary">
-                <h4 class="title"> Realtime White Board </h4>
-                <img src="assets/img/creative-realtime-board-screenshot1.png" (click)="open(realtimewhiteboard,'' , '')" alt="">
-            </div>
-            <div class="col-md-3">
-                <img src="assets/img/presentation-page/header2.jpg" alt="">
-            </div>
-            <div class="col-md-3">
-                <img src="assets/img/presentation-page/header3.jpg" alt="">
-            </div>
-            <div class="col-md-3">
-                <img src="assets/img/presentation-page/header4.jpg" alt="">
+<ng-template #ecomrousseausite let-c="close" let-d="dismiss">
+    <div class="modal-header justify-content-center">
+        <button type="button" class="close" (click)="d('Cross click')">
+            <i class="now-ui-icons ui-1_simple-remove"></i>
+        </button>
+        <h4 class="title title-up">Commercial Wholesale Jewelry Ecommerce Site</h4> 
+
+        <div class="img-container">
+            <img src="assets/img/rousseauchaincom_img.png" alt="" srcset="">
+        </div>
+    </div>
+
+    <div class="modal-body">
+        <p>
+            A commercial ecommerce Wordpress site for RousseauChain ltd a wholesale jewlery company, currently active with purchasing customers. 
+            I've connected local data to the site and a quick order form that enables the customer to order many items fast using their keyboard.
+            In addition, I manage a project to bring their entire physical catalog online and integrated DCatalog a visual flip book online with our ecommerce system.
+        </p>
+        
+        <p> <strong> My responsibilities</strong>: I manage most of the WordPress and Digital Catalog development of the project, and integrations with third-party tools such as WooCommerce and Dcatalog. On top of that, I did all the web design and graphic work.</p>
+
+        <mat-chip-list>
+            <mat-chip selected color="primary">Wordpress</mat-chip>
+            <mat-chip color="accent" selected>PHP</mat-chip>
+            <mat-chip color="accent" selected>JavaScript</mat-chip>
+            <mat-chip color="accent" selected>CSS</mat-chip>
+            <mat-chip color="accent" selected>WooCommerce</mat-chip>
+            <mat-chip color="accent" selected>DCatalog</mat-chip>
+            <mat-chip color="accent" selected>Graphic Design</mat-chip>
+            <mat-chip color="accent" selected>Web Design</mat-chip>
+        </mat-chip-list>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" placement="top" ngbTooltip="Sorry, I don't own this code."><i class="fab fa-github"></i> Github</button>
+        <button type="button" class="btn btn-danger" (click)="c('Close click')">Close</button>
+    </div>
+</ng-template>
+
+
+<ng-template #dota2edge let-c="close" let-d="dismiss">
+    <div class="modal-header justify-content-center">
+        <button type="button" class="close" (click)="d('Cross click')">
+            <i class="now-ui-icons ui-1_simple-remove"></i>
+        </button>
+        <h4 class="title title-up">A Realtime Dota2 Algorithm Calculator</h4> 
+
+        <div class="img-container">
+            <img src="assets/img/dota2-wallpaper.jpg" alt="" srcset="">
+        </div>
+    </div>
+
+    <div class="modal-body">
+        <p>
+                Dota 2 is a game similar to chess there's many combinations that decide your next move. This app calculates your next best move an "unfair advantage"
+        </p>
+        
+        <p> <strong> My responsibilities</strong>: This was a side project of mine and I did everything from idea to completeion.</p>
+
+        <mat-chip-list>
+            <mat-chip selected color="primary">Angular</mat-chip>
+            <mat-chip color="primary" selected>Firebase</mat-chip>
+            <mat-chip color="accent" selected>AngularFire2</mat-chip>
+            <mat-chip color="accent" selected>Bootstrap</mat-chip>
+        </mat-chip-list>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" (click)="redirect('https://github.com/booksftw/dota-2-edge')"><i class="fab fa-github"></i> Github</button>
+        <button type="button" class="btn btn-danger" (click)="c('Close click')">Close</button>
+    </div>
+</ng-template>
+
+<ng-template #lighthouseeats let-c="close" let-d="dismiss">
+        <div class="modal-header justify-content-center">
+            <button type="button" class="close" (click)="d('Cross click')">
+                <i class="now-ui-icons ui-1_simple-remove"></i>
+            </button>
+            <h4 class="title title-up">A Restaurant Service App Similar to SkipTheDishes</h4> 
+    
+            <div class="img-container">
+                <img src="assets/img/dota2-wallpaper.jpg" alt="" srcset="">
             </div>
         </div>
+    
+        <div class="modal-body">
+            <p>
+                    I did this for my midterm at Lighthouse Labs in a team of 3. Lighthouse eats, an app similar to SkipTheDishes and other food delivery apps.
+                    It has route guards and basic authentication enabling user-stories.
+                    A customer can login and visit all the restaurants available on our list.
+                    Clicking a store gives you access to restaurants menu and cart. On checkout we provide a basic estimated wait time with animation.
+                    The app doesn't end here. The restaurant owner's user story starts. After an order has been processed, a logged in store owner can visit his restaurants backend and manage the order
+                    in an interactive way.
+            </p>
+            
+            <p> <strong> My responsibilities</strong>: I did the entire backend that includes PostgresSQL, Knex, and Express.In addition, I did some front end such as the login page, the login component, and the checkout animation timer.</p>
+    
+            <mat-chip-list>
+                <mat-chip color="primary" selected>PostgresSQL</mat-chip>
+                <mat-chip selected color="primary">Express</mat-chip>
+                <mat-chip color="accent" selected>JavaScript</mat-chip>
+                <mat-chip color="accent" selected>CSS</mat-chip>
+                <mat-chip color="accent" selected>Bootstrap</mat-chip>
+                <mat-chip color="accent" selected>JQuery</mat-chip>
+            </mat-chip-list>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" (click)="redirect('https://github.com/booksftw/restaurant_mid_term')"><i class="fab fa-github"></i> Github</button>
+            <button type="button" class="btn btn-danger" (click)="c('Close click')">Close</button>
+        </div>
+    </ng-template>
+
+
+
+<!-- Project Grid -->
+<div class="container-fluid">
+    <div class="section-cols">
+        <div class="row nz-project-grid">
+            <div class="col-md-3 btn btn-primary">
+                <h5 class="title"> Realtime WhiteBoard </h5>
+                <img src="assets/img/creative-realtime-board-screenshot1.png" (click)="open(realtimewhiteboard,'' , '')" alt="">
+            </div>
+            <div class="col-md-3 btn btn-primary">
+                <h5 class="title"> RousseauChain </h5>
+                <img src="assets/img/rousseauchaincom_img.png" (click)="open(ecomrousseausite,'' , '')" alt="">
+            </div>
+            <div class="col-md-3 btn btn-primary">
+                <h5 class="title"> Dota2Edge </h5>
+                <img src="assets/img/dota2-wallpaper.jpg" (click)="open(dota2edge,'' , '')" alt="">
+            </div>
+            <div class="col-md-3 btn btn-primary">
+                <h5 class="title"> LighthouseEats </h5>
+                <img src="assets/img/ligthouseeats_img.png" (click)="open(lighthouseeats,'' , '')" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="row">
+            <div class="col-md-8 ml-auto mr-auto text-center">
+                <h2 class="title">Coming home, a pleasure!</h2>
+                <h4 class="description">Havenly is a convenient, personal and affordable way to redecorate your home room by room. Collaborate with our professional interior designers on our online platform. </h4>
+            </div>
     </div>
 </div>
