@@ -193,6 +193,23 @@ ngb-modal-window.modal.fade.show.d-block {
     left: 118px;
 }
 
+.mat-list-item-content, .nz-dim-gray{
+    color:dimgrey;
+    font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
+}
+
+#nz-employment-list mat-list-item {
+    margin-left: 100px;
+}
+
+#nz-matlist-sub-header{
+    margin-bottom: 0px;
+}
+
+#nz-matlist-sub-header.nz-responsibility-description{
+    text-align:left;
+}
+
 // Media Queries
 
 @media (max-width: 768px){
