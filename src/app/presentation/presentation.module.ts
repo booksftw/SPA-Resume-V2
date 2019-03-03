@@ -12,6 +12,7 @@ import { NzprofileComponent } from './nzprofile/nzprofile.component';
 // import {MatIconModule} from '@angular/material/icon';
 // import {MatButtonModule} from '@angular/material/button';
 import {MatChipsModule} from '@angular/material/chips';
+import { NzmodalprojectsComponent } from './nzmodalprojects/nzmodalprojects.component';
 
 @NgModule({
     imports: [
@@ -25,7 +26,7 @@ import {MatChipsModule} from '@angular/material/chips';
         // MatButtonModule
         MatChipsModule
     ],
-    declarations: [ PresentationComponent, NzprofileComponent ],
+    declarations: [ PresentationComponent, NzprofileComponent, NzmodalprojectsComponent ],
     exports: [ PresentationComponent ],
     providers: []
 })

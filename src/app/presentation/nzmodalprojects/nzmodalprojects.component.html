@@ -1,0 +1,85 @@
+<button class="btn btn-primary text-margin" (click)="open(classic,'' , '')">
+    <i class="now-ui-icons files_single-copy-04"></i> Classic
+</button>
+<ng-template #classic let-c="close" let-d="dismiss">
+    <div class="modal-header justify-content-center">
+        <button type="button" class="close" (click)="d('Cross click')">
+            <i class="now-ui-icons ui-1_simple-remove"></i>
+        </button>
+        <h4 class="title title-up">Modal title</h4>
+    </div>
+    <div class="modal-body">
+        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind
+            texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A
+            small river named Duden flows by their place and supplies it with the necessary regelialia. It is a
+            paradisematic country, in which roasted parts of sentences fly into your mouth.
+        </p>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default">Nice Button</button>
+        <button type="button" class="btn btn-danger" (click)="c('Close click')">Close</button>
+    </div>
+</ng-template>
+
+
+<ng-template #realtimewhiteboard let-c="close" let-d="dismiss">
+    <div class="modal-header justify-content-center">
+        <button type="button" class="close" (click)="d('Cross click')">
+            <i class="now-ui-icons ui-1_simple-remove"></i>
+        </button>
+        <h4 class="title title-up">Realtime Whiteboard</h4> 
+
+        <!-- <img src="assets/img/creative-realtime-board-screenshot1.png"> -->
+        <div class="img-container">
+            <img src="assets/img/creative-realtime-board-screenshot1.png" alt="" srcset="">
+        </div>
+    </div>
+
+    <div class="modal-body">
+        <p> Realtime whiteboard is an online hangout space with features similar to OneNote and Photoshop made
+            for people that just want to hang out and plan their next outting. It's fun, social, and interactive.
+        </p>
+        
+        <h4>Features</h4>
+        <ul>
+            <li> Syncs in realtime!! Chat, draw, livestream, even upload gifs. Everything is a block that you can move around and this updates live for all clients in the room !! </li>
+            <li> Meet up with all your friends in a room and updates will be saved in our database for next time.</li>
+            <li>   Say more with visual tools</li>
+            <li>  Livestream video using your phone or webcam </li>
+            <li>  Send live messages in chatroom</li>
+            <li>  Share laughs and memories with stickers, gifs, images, avatars, and more.</li>
+        </ul>
+        <p> <strong> My responsibilities</strong>: I did all of the Backend and Angular work, most of the app. My partner did the html templates and css for most of the app.</p>
+
+        <mat-chip-list>
+            <mat-chip selected color="primary">Angular</mat-chip>
+            <mat-chip color="primary" selected>Firebase</mat-chip>
+            <mat-chip color="accent" selected>Bootstrap</mat-chip>
+            <mat-chip color="accent" selected>Angular Material</mat-chip>
+        </mat-chip-list>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" (click)="redirect('https://github.com/booksftw/creative-realtime-board')"><i class="fab fa-github"></i> Github</button>
+        <button type="button" class="btn btn-danger" (click)="c('Close click')">Close</button>
+    </div>
+</ng-template>
+
+<div class="container-fluid">
+    <div class="section-cols">
+        <div class="row">
+            <div class="col-md-3 btn btn-primary">
+                <h4 class="title"> Realtime White Board </h4>
+                <img src="assets/img/creative-realtime-board-screenshot1.png" (click)="open(realtimewhiteboard,'' , '')" alt="">
+            </div>
+            <div class="col-md-3">
+                <img src="assets/img/presentation-page/header2.jpg" alt="">
+            </div>
+            <div class="col-md-3">
+                <img src="assets/img/presentation-page/header3.jpg" alt="">
+            </div>
+            <div class="col-md-3">
+                <img src="assets/img/presentation-page/header4.jpg" alt="">
+            </div>
+        </div>
+    </div>
+</div>
