@@ -8,9 +8,10 @@ import { RouterModule } from '@angular/router';
 import { PresentationComponent } from './presentation.component';
 import { NzprofileComponent } from './nzprofile/nzprofile.component';
 
-import {MatTabsModule} from '@angular/material';
-import {MatIconModule} from '@angular/material/icon';
-import {MatButtonModule} from '@angular/material/button';
+// import {MatTabsModule} from '@angular/material';
+// import {MatIconModule} from '@angular/material/icon';
+// import {MatButtonModule} from '@angular/material/button';
+import {MatChipsModule} from '@angular/material/chips';
 
 @NgModule({
     imports: [
@@ -19,12 +20,13 @@ import {MatButtonModule} from '@angular/material/button';
         FormsModule,
         RouterModule,
         NgbModule,
-        MatTabsModule,
-        MatIconModule,
-        MatButtonModule
+        // MatTabsModule,
+        // MatIconModule,
+        // MatButtonModule
+        MatChipsModule
     ],
     declarations: [ PresentationComponent, NzprofileComponent ],
-    exports:[ PresentationComponent ],
+    exports: [ PresentationComponent ],
     providers: []
 })
 export class PresentationModule { }

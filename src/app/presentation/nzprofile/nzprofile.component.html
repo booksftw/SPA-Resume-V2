@@ -20,102 +20,46 @@
                         </a>
                     </div> -->
         <h3 class="title">A Little About me </h3>
-        
-        <h5 class="description text-center"> 
+
+        <h5 class="description text-center">
             My first paid exposure to development was working under a software engineer for Cisco,
-                the experience was invaluable.   
-                I knew my interest in the field was real when I developed 
-                a storyboard app to propose to my wife, and was successful. <br><br>
-                
-                For 3 years my work was half graphic design and web development.
-                You can find my work in Canadian Jewellers and Business Jewellers magazines, Las Vegas jewelry tradeshow, Hong Kong jewelry tradeshow, and more. <br>
-        
-                At this point in my developer journey I am enjoying my exposure
-                to Javascript and frameworks like Angular and React as a full stack tool.<br><br> 
-                I’m enthralled with it’s ability to have control over and influence the user experience.
-                Looking for opportunities to grow in these modern stacks and strengthen my backend abilities.</h5>
+            the experience was invaluable.
+            I knew my interest in the field was real when I developed
+            a storyboard app to propose to my wife, and was successful. <br><br>
+
+            For 3 years my work was half graphic design and web development.
+            You can find my work in Canadian Jewellers and Business Jewellers magazines, Las Vegas jewelry tradeshow,
+            Hong Kong jewelry tradeshow, and more. <br>
+
+            At this point in my developer journey I am enjoying my exposure
+            to Javascript and frameworks like Angular and React as a full stack tool.<br><br>
+            I’m enthralled with it’s ability to have control over and influence the user experience.
+            Looking for opportunities to grow in these modern stacks and strengthen my backend abilities.</h5>
         <div class="row">
             <div class="col-md-12">
-                    <div class="col nz-center-tab-group">
-                            <mat-tab-group class="nz-tab-group">
-                                    <mat-tab class="nz-mat-tab-label" label="First"> 
-                                            <ng-template mat-tab-label>
-                                                    <i class="now-ui-icons clothes_tie-bow"></i>
-                                                  </ng-template>
-                                            <p class="card-description text-black">
-                                                    Trello’s boards, lists, and cards enable you to organize and prioritize
-                                                    your projects in a fun, flexible and rewarding way. It was a great
-                                                    project and I would be more than happy to do it again.
-                                                </p>
-                                    </mat-tab>
-                                    <mat-tab>
-                                            <ng-template mat-tab-label>
-                                              <!-- <mat-icon class="example-tab-icon">thumb_up</mat-icon> -->
-                                              
-                                            
-                                                    <i class="now-ui-icons emoticons_satisfied"></i>
-                                                
-                                            </ng-template>
-                                            Content 2
-                                          </mat-tab>
-                                    <!-- <mat-tab label="Third"> Content 1 </mat-tab> -->
-                                    <mat-tab>
-                                        <ng-template mat-tab-label>
-                                            <!-- <mat-icon class="example-tab-icon">thumb_up</mat-icon> -->
-                                            
-                                            <i class="now-ui-icons tech_mobile"></i>
-                                        </ng-template>
-                                        Contact
-                                    </mat-tab>
-                            </mat-tab-group>
-
-                            
-                            
-                    </div>
-
-                <h4 class="title text-center">My Portfolio</h4>
-                <ngb-tabset [justify]="'center'" type="pills" class="nav nav-pills nav-pills-primary  nav-pills-just-icons justify-content-center tab-space">
+                <h3 class="title"> Languages </h3>
+                <ngb-tabset [justify]="'center'" type="pills"
+                    class="nav nav-pills nav-pills-primary  nav-pills-just-icons justify-content-center tab-space">
                     <ngb-tab>
                         <ng-template ngbTabTitle>
-                            <i class="now-ui-icons design_image"></i>
+                            <i class="now-ui-icons design-2_ruler-pencil" placement="top" ngbTooltip="Front-End"></i>
                         </ng-template>
                         <ng-template ngbTabContent>
                             <div class="row">
-                                <div class="col-md-5 ml-auto mr-auto">
-                                    <div class="card card-background card-background-product card-raised" style="background-image: url('assets/img/bg23.jpg')">
+                                <div class="col-md-12 ml-auto mr-auto">
+                                    <div class="card card-background card-raised">
                                         <div class="card-body">
-                                            <h2 class="card-title">Chair remake.</h2>
-                                            <p class="card-description text-white">
-                                                Trello’s boards, lists, and cards enable you to organize and prioritize
-                                                your projects in a fun, flexible and rewarding way. It was a great
-                                                project and I would be more than happy to do it again.
-                                            </p>
-                                            <label class="badge badge-neutral">Trello</label>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-5 ml-auto mr-auto">
-                                    <div class="info info-horizontal">
-                                        <div class="icon icon-warning">
-                                            <i class="now-ui-icons users_single-02"></i>
-                                        </div>
-                                        <div class="description">
-                                            <h5 class="info-title">Work With Any Team</h5>
-                                            <p class="description">
-                                                Whether it’s for work or even the next family vacation, Trello helps
-                                                your team.
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="info info-horizontal">
-                                        <div class="icon icon-warning">
-                                            <i class="now-ui-icons business_chart-bar-32"></i>
-                                        </div>
-                                        <div class="description">
-                                            <h5 class="info-title">A Productivity Platform</h5>
-                                            <p class="description">
-                                                Integrate the apps your team already uses directly into your workflow.
-                                            </p>
+                                            <h1 class="title nz-white">Frontend</h1>
+                                            <mat-chip-list>
+                                                <mat-chip selected color="primary">Angular</mat-chip>
+                                                <mat-chip selected color="primary">JavaScript</mat-chip>
+                                                <mat-chip selected color="accent"> React </mat-chip>
+                                                <mat-chip color="accent" selected>HTML</mat-chip>
+                                                <mat-chip color="accent" selected>SASS</mat-chip>
+                                                <mat-chip color="accent" selected>Bootstrap</mat-chip>
+                                                <mat-chip color="accent" selected>Angular Material</mat-chip>
+                                                <mat-chip color="accent" selected>JQuery</mat-chip>
+                                            </mat-chip-list>
                                         </div>
                                     </div>
                                 </div>
@@ -124,27 +68,33 @@
                     </ngb-tab>
                     <ngb-tab>
                         <ng-template ngbTabTitle>
-                            <i class="now-ui-icons location_world"></i>
+                            <i class="now-ui-icons ui-2_settings-90" placement="top" ngbTooltip="Back-End"></i>
                         </ng-template>
                         <ng-template ngbTabContent>
                             <div class="row">
-                                <div class="col-md-5 ml-auto mr-auto">
-                                    <div class="card card-background card-background-product card-raised" style="background-image: url('assets/img/project8.jpg')">
+                                <div class="col-md-12 ml-auto mr-auto">
+                                    <div class="card card-background card-background-product card-raised">
                                         <div class="card-body">
-                                            <h2 class="card-title">Social Analytics</h2>
-                                            <p class="card-description">
-                                                Insight to help you create, connect, and convert. Understand Your
-                                                Audience's Interests, Influence, Interactions, and Intent. Discover
-                                                emerging topics and influencers to reach new audiences.
-                                            </p>
-                                            <label class="badge badge-neutral">Analytics</label>
+                                            <h1 class="title nz-white">Backend</h1>
+                                            <mat-chip-list>
+                                                <mat-chip selected color="primary">Node</mat-chip>
+                                                <mat-chip selected color="primary">Express</mat-chip>
+                                                <mat-chip selected color="primary"> Firebase </mat-chip>
+                                                <mat-chip color="accent" selected>C# - in progress</mat-chip>
+                                                <mat-chip color="accent" selected>.NET Core - in progress</mat-chip>
+                                                <mat-chip color="accent" selected>Mongo</mat-chip>
+                                                <mat-chip color="accent" selected>SQL</mat-chip>
+                                                <mat-chip color="accent" selected>PHP</mat-chip>
+                                                <mat-chip color="accent" selected>Python</mat-chip>
+                                                <mat-chip color="accent" selected>Lua</mat-chip>
+                                            </mat-chip-list>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-5 ml-auto mr-auto">
+                                <!-- <div class="col-md-5 ml-auto mr-auto">
                                     <div class="info info-horizontal">
                                         <div class="icon icon-danger">
-                                            <i class="now-ui-icons ui-2_chat-round"></i>
+                                            <i class="now-ui-icons tech_laptop"></i>
                                         </div>
                                         <div class="description">
                                             <h5 class="info-title">Listen to Social Conversations</h5>
@@ -166,54 +116,61 @@
                                             </p>
                                         </div>
                                     </div>
-                                </div>
+                                </div> -->
                             </div>
                         </ng-template>
                     </ngb-tab>
                     <ngb-tab>
-                        
-                            <ng-template ngbTabTitle>
-                                    <i class="now-ui-icons design-2_ruler-pencil"></i>
-                                  </ng-template>
-                                    <ng-template ngbTabContent>
-                                      <div class="row">
-                                          <div class="col-md-5 ml-auto mr-auto">
-                                              <div class="card card-background card-background-product card-raised" style="background-image: url('assets/img/bg25.jpg')">
-                                                  <div class="card-body">
-                                                      <h2 class="card-title">Interior Redesign</h2>
-                                                      <p class="card-description">
-                                                          Insight to help you create, connect, and convert. Understand Your Audience's Interests, Influence, Interactions, and Intent. Discover emerging topics and influencers to reach new audiences.
-                                                      </p>
-                                                      <label class="badge badge-neutral">Interior</label>
-                                                  </div>
-                                              </div>
-                                          </div>
-                                          <div class="col-md-5 ml-auto mr-auto">
-                                              <div class="info info-horizontal">
-                                                  <div class="icon icon-info">
-                                                      <i class="now-ui-icons design_palette"></i>
-                                                  </div>
-                                                  <div class="description">
-                                                      <h5 class="info-title">Colors adjustments</h5>
-                                                      <p class="description">
-                                                          Gain access to the demographics, psychographics, and location of unique people who talk about your brand.
-                                                      </p>
-                                                  </div>
-                                              </div>
-                                              <div class="info info-horizontal">
-                                                  <div class="icon icon-info">
-                                                      <i class="now-ui-icons design_scissors"></i>
-                                                  </div>
-                                                  <div class="description">
-                                                      <h5 class="info-title">Performance Clothing</h5>
-                                                      <p class="description">
-                                                          Unify data from Facebook, Instagram, Twitter, LinkedIn, and Youtube to gain rich insights from easy-to-use reports.
-                                                      </p>
-                                                  </div>
-                                              </div>
-                                          </div>
-                                      </div>
-                                    </ng-template>
+
+                        <ng-template ngbTabTitle>
+                            <i class="now-ui-icons tech_laptop" placement="top" ngbTooltip="CMS & SDK & MISC"></i>
+                        </ng-template>
+                        <ng-template ngbTabContent>
+                            <div class="row">
+                                <div class="col-md-12 ml-auto mr-auto">
+                                    <div class="card card-background card-raised">
+                                        <div class="card-body">
+                                                <h1 class="title nz-white">CMS & SDK & MISC</h1>
+                                                <mat-chip-list>
+                                                    <mat-chip selected color="primary">Wordpress</mat-chip>
+                                                    <mat-chip selected color="accent">Corona SDK</mat-chip>
+                                                    <mat-chip selected color="accent"> Ionic </mat-chip>
+                                                    <mat-chip color="accent" selected>Adobe XD</mat-chip>
+                                                    <mat-chip color="accent" selected>Adobe Photoshop</mat-chip>
+                                                    <mat-chip color="accent" selected>Adobe Illustrator</mat-chip>
+                                                    <mat-chip color="accent" selected>Adobe Indesign</mat-chip>
+                                                </mat-chip-list>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- <div class="col-md-5 ml-auto mr-auto">
+                                    <div class="info info-horizontal">
+                                        <div class="icon icon-info">
+                                            <i class="now-ui-icons design_palette"></i>
+                                        </div>
+                                        <div class="description">
+                                            <h5 class="info-title">Colors adjustments</h5>
+                                            <p class="description">
+                                                Gain access to the demographics, psychographics, and location of unique
+                                                people who talk about your brand.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="info info-horizontal">
+                                        <div class="icon icon-info">
+                                            <i class="now-ui-icons design_scissors"></i>
+                                        </div>
+                                        <div class="description">
+                                            <h5 class="info-title">Performance Clothing</h5>
+                                            <p class="description">
+                                                Unify data from Facebook, Instagram, Twitter, LinkedIn, and Youtube to
+                                                gain rich insights from easy-to-use reports.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div> -->
+                            </div>
+                        </ng-template>
                     </ngb-tab>
                 </ngb-tabset>
             </div>

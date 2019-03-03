@@ -42,8 +42,16 @@ div#nzprofile {
         width: 520px;
         margin: 0 auto;
     }
-    // Media Queries
 
+    .nav-pills.nav-pills-primary .nav-item .nav-link.active, .nav-pills.nav-pills-primary .nav-item .nav-link.active:focus, .nav-pills.nav-pills-primary .nav-item .nav-link.active:hover{
+        background-color:deeppink !important;
+    }
+
+    .nz-white{
+        color:white;
+    }
+
+// Media Queries
 @media (max-width: 768px){
 
 }
@@ -54,12 +62,26 @@ div#nzprofile {
 }
 
 @media screen and (max-width: 576px){
-    .nz-center-tab-group{
-        width: 282px;
-        margin: 0 auto;
-    }
-    div#nzprofile .nz-center-tab-group {
-        width: fit-content;
+
+    div#nzprofile {
+
+        .nz-center-tab-group{
+            width: 282px;
+            margin: 0 auto;
+        }
+        // div#nzprofile .nz-center-tab-group {
+        //     width: inherit;
+        // }
+
+        div#nzprofile .mat-tab-group {
+            width: 74vw;
+            margin: 0 auto;
+        }
+
+        .mat-tab-body-wrapper{
+            text-align:center;
+        }
+
     }
 }
 
