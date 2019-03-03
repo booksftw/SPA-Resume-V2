@@ -3,8 +3,16 @@ div#nz-presentation-wrapper{
         text-align: left;
     }
     
-    .presentation-page .section-basic-components .image-container {
+    .presentation-page .section-basic-components .image-container, #nz-image-container {
+        position: relative;
         top: -178px;
+    }
+
+    .nz-community-icons {
+        // display: inline;
+        text-align: center;
+        margin-left: 10px;
+        width:50px;
     }
     
     
