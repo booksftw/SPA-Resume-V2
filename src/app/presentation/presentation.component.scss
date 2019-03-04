@@ -21,7 +21,29 @@ div#nz-presentation-wrapper{
         margin-right: auto;
         width: 50%;
     }
+
+    .nz-about-me-section{
+        padding-bottom: 0px;
+    }
     
+    footer {
+        height: 700px;
+        background-color: #a9cee1;
+        
+        ul.nz-footer-list > li {
+            display: inline-block;
+            /* You can also add some margins here to make it look prettier */
+            zoom:1;
+            *display:inline;
+            /* this fix is needed for IE7- */
+        }
+
+        h4.title.nz-footer-title{
+            position: relative;
+            top: -100px;
+        }
+    }
+
     // Media Queries
     
     @media (max-width: 768px){

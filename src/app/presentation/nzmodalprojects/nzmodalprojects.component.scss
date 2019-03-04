@@ -210,6 +210,11 @@ ngb-modal-window.modal.fade.show.d-block {
     text-align:left;
 }
 
+#nz-matlist-strengths mat-list-item{
+    text-align:center;
+    margin-left: 100px;
+}
+
 // Media Queries
 
 @media (max-width: 768px){
