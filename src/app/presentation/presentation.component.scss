@@ -42,6 +42,11 @@ div#nz-presentation-wrapper{
             position: relative;
             top: -100px;
         }
+
+        .nz-letsconnect {
+            position: relative;
+            right:44px;
+        }
     }
 
     // Media Queries
@@ -62,6 +67,10 @@ div#nz-presentation-wrapper{
     @media screen and (max-width: 576px){
         .nz-intro-header{
             font-size: 27px;
+        }
+
+        footer {
+            height:950px;
         }
     }
     

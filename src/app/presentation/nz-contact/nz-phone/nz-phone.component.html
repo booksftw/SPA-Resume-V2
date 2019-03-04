@@ -1,6 +1,8 @@
 <div class="phone-container">
-    <img class="phone-icon btn btn-info" [ngClass]="{'pos-center': center, 'pos-left': left}" src="assets/img/icons/cell-black.svg"
+    <button mat-button>
+    <img class="phone-icon" [ngClass]="{'pos-center': center, 'pos-left': left}" src="assets/img/icons/cell-black.svg"
       alt="phone icon" (click)="isShown = !isShown">
+    </button>
     <p [ngClass]="{'pos-center': center, 'pos-left': left}" *ngIf="isShown" style="color:black;">
       1-250-415-5392</p>
   </div>
