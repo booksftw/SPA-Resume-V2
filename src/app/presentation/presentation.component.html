@@ -1,12 +1,15 @@
 <div class="wrapper" id="nz-presentation-wrapper">
     <div class="page-header clear-filter">
-        <div class="rellax-header rellax-header-sky" data-rellax-speed="-8">
+
+        <!-- 
+            This is not useful besides the fact its connecting all styling.
+            Delete this on your last lap and set up all the styling or keep it
+        -->
+        <!-- <div class="rellax-header rellax-header-sky" data-rellax-speed="-8">
             <div class="page-header-image" style="background-color: #333">
             </div>
-        </div>
-
-        <!-- <div class="rellax-header rellax-header-buildings" data-rellax-speed="0">
         </div> -->
+        
 
         <div class="rellax-text-container rellax-text">
             <h2 class="nz-intro-header">
@@ -138,28 +141,24 @@
                             <img src="assets/img/lets-connect-getty.jpg" alt="" srcset="">
                             <h4 class="title nz-footer-title">Let's Connect</h4>
                         </div>
-                        <div class="col-md-10">
+                        <!-- <div class="col-md-12">
                                 <ul class="nz-footer-list">
-                                        <li> <a href="#">some item</a>
-                                            
+                                        <li> 
+                                            <app-nz-email center="true"></app-nz-email>
                                         </li>
-                                        <li> <a href="#">another item</a>
-                                    
-                                        </li>
-                                        <li> <a href="#">some item</a>
-                                    
-                                        </li>
-                                        <li> <a href="#">another item</a>
-                                    
-                                        </li>
-                                        <li> <a href="#">some item</a>
-                                    
-                                        </li>
-                                        <li> <a href="#">another item</a>
-                                    
+                                        <li>
+                                            <app-nz-phone center='true'></app-nz-phone>
                                         </li>
                                     </ul>
-                        </div>
+                        </div> -->
+                    </div>
+                    <div class="row">
+                            <div class="col-md-6">
+                                    <app-nz-email center="true"></app-nz-email>
+                                </div>
+                                <div class="col-md-6re">
+                                    <app-nz-phone center="true"></app-nz-phone>
+                                </div>
                     </div>
                 </div>
             </footer>

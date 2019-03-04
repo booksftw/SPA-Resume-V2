@@ -8,12 +8,15 @@ import { RouterModule } from '@angular/router';
 import { PresentationComponent } from './presentation.component';
 import { NzprofileComponent } from './nzprofile/nzprofile.component';
 
-// import {MatTabsModule} from '@angular/material';
-// import {MatIconModule} from '@angular/material/icon';
-// import {MatButtonModule} from '@angular/material/button';
-import {MatChipsModule} from '@angular/material/chips';
+import { NzContactComponent } from './nz-contact/nz-contact.component';
+import { NzPhoneComponent } from './nz-contact/nz-phone/nz-phone.component';
+import { NzEmailComponent } from './nz-contact/nz-email/nz-email.component';
+import { NzStickyNavComponent } from './nz-sticky-nav/nz-sticky-nav.component';
 import { NzmodalprojectsComponent } from './nzmodalprojects/nzmodalprojects.component';
+
+import {MatChipsModule} from '@angular/material/chips';
 import {MatListModule} from '@angular/material/list';
+import {MatButtonModule} from '@angular/material/button';
 
 @NgModule({
     imports: [
@@ -24,11 +27,12 @@ import {MatListModule} from '@angular/material/list';
         NgbModule,
         // MatTabsModule,
         // MatIconModule,
-        // MatButtonModule
+        MatButtonModule,
         MatChipsModule,
         MatListModule
     ],
-    declarations: [ PresentationComponent, NzprofileComponent, NzmodalprojectsComponent ],
+    // tslint:disable-next-line: max-line-length
+    declarations: [ PresentationComponent, NzprofileComponent, NzmodalprojectsComponent, NzContactComponent, NzPhoneComponent, NzEmailComponent, NzStickyNavComponent ],
     exports: [ PresentationComponent ],
     providers: []
 })

@@ -22,19 +22,19 @@ export class NzprofileComponent implements OnInit, OnDestroy {
   constructor() { }
 
   ngOnInit() {
-    const rellaxHeader = new Rellax('.rellax-header');
+    // const rellaxHeader = new Rellax('.rellax-header');
 
     const body = document.getElementsByTagName('body')[0];
     body.classList.add('profile-page');
-    const navbar = document.getElementsByTagName('nav')[0];
-    navbar.classList.add('navbar-transparent');
+    // const navbar = document.getElementsByTagName('nav')[0];
+    // navbar.classList.add('navbar-transparent');
 
   }
   ngOnDestroy() {
     const body = document.getElementsByTagName('body')[0];
     body.classList.remove('profile-page');
-    const navbar = document.getElementsByTagName('nav')[0];
-    navbar.classList.remove('navbar-transparent');
+    // const navbar = document.getElementsByTagName('nav')[0];
+    // navbar.classList.remove('navbar-transparent');
   }
 
 }

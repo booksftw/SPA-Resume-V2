@@ -1,0 +1,13 @@
+<div class="email-container">
+  <button mat-button>
+    <img class="email-icon" [ngClass]="{'pos-center': center, 'pos-left': left}"
+      src="assets/img/icons/email-white.jpg" alt="email icon" (click)="isShown = !isShown">
+  </button>
+  <p [ngClass]="{'pos-center': center, 'pos-left': left}" *ngIf="isShown" style="color:black;">
+    nicholas.zachary@outlook.com</p>
+
+  <!-- <button mat-icon-button>
+        <mat-icon aria-label="Example icon-button with a heart icon">favorite</mat-icon>
+      </button> -->
+
+</div>
