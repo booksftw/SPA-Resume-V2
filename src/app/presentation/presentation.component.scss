@@ -1,6 +1,22 @@
+div#nz-presentation-wrapper .rellax-text-container {
+    max-width: 1490px;
+    margin-left: 349px;
+}
+
 div#nz-presentation-wrapper{
-    .nz-intro-header {
+    height: 140vh;
+    // background-color: black;
+
+
+    .rellax-text-container{
+        max-width: 1490px;
+        margin-left: 349px;
+    }
+
+    h2.nz-intro-header {
         text-align: left;
+        font-size: 108px;
+        // color:white;
     }
     
     .presentation-page .section-basic-components .image-container, #nz-image-container {
@@ -21,34 +37,6 @@ div#nz-presentation-wrapper{
         margin-right: auto;
         width: 50%;
     }
-
-    .nz-about-me-section{
-        padding-bottom: 0px;
-    }
-    
-    footer {
-        height: 850px;
-        background-color: #a9cee1;
-        
-        ul.nz-footer-list > li {
-            display: inline-block;
-            /* You can also add some margins here to make it look prettier */
-            zoom:1;
-            *display:inline;
-            /* this fix is needed for IE7- */
-        }
-
-        h4.title.nz-footer-title{
-            position: relative;
-            top: -100px;
-        }
-
-        .nz-letsconnect {
-            position: relative;
-            right:44px;
-        }
-    }
-
     // Media Queries
     
     @media (max-width: 768px){
@@ -141,5 +129,34 @@ div#nz-presentation-wrapper{
     
     @media (max-width:1200px) and (min-width:991px) {
     
+    }
+}
+
+div#nz-about-me-section{
+    padding-bottom: 0px;
+}
+
+
+
+footer.footer {
+    height: 850px;
+    background-color: #a9cee1;
+    
+    ul.nz-footer-list > li {
+        display: inline-block;
+        /* You can also add some margins here to make it look prettier */
+        zoom:1;
+        *display:inline;
+        /* this fix is needed for IE7- */
+    }
+
+    h4.title.nz-footer-title{
+        position: relative;
+        top: -100px;
+    }
+
+    .nz-letsconnect {
+        position: relative;
+        right:44px;
     }
 }
