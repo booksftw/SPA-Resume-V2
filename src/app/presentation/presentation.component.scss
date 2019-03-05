@@ -50,17 +50,26 @@ div#nz-presentation-wrapper{
     }
     // Media Queries
     
-    // @media (max-width: 768px){
-
-    // }
-    
-    
-    @media screen and (min-width: 991px){
-        .nz-intro-header{
-            font-size: 54px;
+    @media screen and (max-width: 990px){
+        .rellax-text-container{
+            margin-left: 100px;
+            h2.nz-intro-header {
+                font-size:69px;
+            }
         }
     }
     
+    
+    @media screen and (min-width: 991px){
+        .rellax-text-container{
+            margin-left: 100px;
+            h2.nz-intro-header {
+                font-size:89px;
+            }
+        }
+
+    }
+
     @media screen and (max-width: 576px){
         .nz-intro-header{
             font-size: 27px;
@@ -73,10 +82,9 @@ div#nz-presentation-wrapper{
         .rellax-text-container{
             margin-left: 100px;
             h2.nz-intro-header {
-                font-size:59px !important;
+                font-size:59px;
             }
         }
-
     }
     
     // Iphone Responsive
