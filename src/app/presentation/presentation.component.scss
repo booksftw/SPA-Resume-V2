@@ -18,6 +18,8 @@ div#nz-presentation-wrapper{
     // }
 
 
+
+
     .rellax-text-container{
         max-width: 1490px;
         margin-left: 349px;
@@ -37,7 +39,7 @@ div#nz-presentation-wrapper{
     }
 
     .nz-profile-header {
-        background-color: #f7f7f7;
+        // background-color: #f7f7f7;
         margin-top: 543px;
     }
 
@@ -108,7 +110,11 @@ div#nz-presentation-wrapper{
     }
 
     // end paste
-    
+    #nz-main-section {
+        padding-bottom: 0;
+        margin-top: -172px;
+        border-top: none;
+    }    
     
     // Media Queries
     @media screen and (max-width: 990px){
@@ -272,10 +278,7 @@ footer#footer {
         margin-left: 190px;
         top:7%;
     }
-    
-    div#nz-presentation-wrapper .rellax-text-container h2.nz-intro-header {
-        // font-size: 69px;
-    }
+
 }
 
 @media screen and (max-width: 576px){
