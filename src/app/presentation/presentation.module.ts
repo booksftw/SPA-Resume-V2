@@ -17,6 +17,7 @@ import { NzmodalprojectsComponent } from './nzmodalprojects/nzmodalprojects.comp
 import {MatChipsModule} from '@angular/material/chips';
 import {MatListModule} from '@angular/material/list';
 import {MatButtonModule} from '@angular/material/button';
+import { NzprintresumeComponent } from './nzprintresume/nzprintresume.component';
 
 @NgModule({
     imports: [
@@ -32,7 +33,7 @@ import {MatButtonModule} from '@angular/material/button';
         MatListModule
     ],
     // tslint:disable-next-line: max-line-length
-    declarations: [ PresentationComponent, NzprofileComponent, NzmodalprojectsComponent, NzContactComponent, NzPhoneComponent, NzEmailComponent, NzStickyNavComponent ],
+    declarations: [ PresentationComponent, NzprofileComponent, NzmodalprojectsComponent, NzContactComponent, NzPhoneComponent, NzEmailComponent, NzStickyNavComponent, NzprintresumeComponent ],
     exports: [ PresentationComponent ],
     providers: []
 })
