@@ -26,8 +26,6 @@ import { NzprintresumeComponent } from './nzprintresume/nzprintresume.component'
         FormsModule,
         RouterModule,
         NgbModule,
-        // MatTabsModule,
-        // MatIconModule,
         MatButtonModule,
         MatChipsModule,
         MatListModule
