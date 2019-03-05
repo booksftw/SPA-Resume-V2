@@ -1,13 +1,14 @@
 <div [ngClass]="{
- 'showBackground': isShown && isFixed,
+'showBackground': isShown && isFixed,
 'isFixed': isFixed,
 'is-fixed-phone-container': isFixed,
 'phone-container': !isFixed }">
-    <button mat-button>
+  <button mat-button>
     <img class="phone-icon" [ngClass]="{'pos-center': center, 'pos-left': left}" src="assets/img/icons/cell-black.svg"
       alt="phone icon" (click)="isShown = !isShown">
-    </button>
-    <p class="phone-number" [ngClass]="{'pos-center': center, 'pos-left': left, 'pos-right': right}" *ngIf="isShown" style="color:black;">
-      250-415-5392
-    </p>
-  </div>
+  </button>
+  <p class="phone-number" [ngClass]="{'pos-center': center, 'pos-left': left, 'pos-right': right}" *ngIf="isShown"
+    style="color:black;">
+    250-415-5392
+  </p>
+</div>

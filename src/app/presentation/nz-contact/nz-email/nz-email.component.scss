@@ -1,6 +1,6 @@
 .email-container {
     display: block;
-    width:400px;
+    // width:400px;
 }
 
 .is-fixed-email-container{
@@ -41,10 +41,6 @@
 .email-text {
     font-weight: bold;
     font-size: 19px;
-}
-
-@media screen and (max-width: 990px){
-    // .email-container {
-    //     width: 100px;
-    // }
+    display:block;
+    text-align:center;
 }
