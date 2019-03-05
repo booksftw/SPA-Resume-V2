@@ -188,7 +188,7 @@ ngb-modal-window.modal.fade.show.d-block {
     margin-top: -19px;
 }
 
-.nz-project-grid{
+#nz-project-grid{
     justify-content: center;
 }
 
@@ -215,10 +215,17 @@ ngb-modal-window.modal.fade.show.d-block {
 //     margin-left: 100px;
 // }
 
+#nz-project-grid h5.title {
+    color: white;
+    font-size: 21px;
+    font-family: roboto;
+}
+
+
 // Media Queries
 
 @media (max-width: 768px){
-    .nz-project-grid {
+    #nz-project-grid {
         position: unset;
         left: unset;
     }

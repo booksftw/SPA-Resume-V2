@@ -63,7 +63,7 @@ div#nz-presentation-wrapper{
 
     // Paste from nz profile move
     .description, .title, .icon, .icon-warning, h5.info-title, .mat-tab-label .mat-tab-label-content {
-        font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
+        // font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
         color:grey;
     }
     .mat-tab-group{
@@ -170,7 +170,7 @@ div#nz-presentation-wrapper{
     and (min-device-width : 375px)
     and (max-device-width : 667px)
     and (orientation : portrait) {
-    
+
     }
     
     
@@ -266,4 +266,30 @@ footer#footer {
     }
 }
 
+
+@media screen and (min-width: 991px){
+    div#nz-presentation-wrapper .rellax-text-container {
+        margin-left: 190px;
+        top:7%;
+    }
+    
+    div#nz-presentation-wrapper .rellax-text-container h2.nz-intro-header {
+        // font-size: 69px;
+    }
+}
+
+@media screen and (max-width: 576px){
+
+    div#nz-presentation-wrapper{
+        height: 500vh;
+    }
+
+    div#nz-presentation-wrapper .rellax-text-container {
+        margin-left: 40px;
+    }
+
+    div#nz-presentation-wrapper .rellax-text-container {
+        top: 8% !important;
+    }
+}
 
