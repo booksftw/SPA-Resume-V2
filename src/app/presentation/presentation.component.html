@@ -16,8 +16,101 @@
         <app-nzprofile></app-nzprofile>
     </div>
 
-    <div class="section section-basic-components" id='nz-about-me-section'>
+    <!-- paste -->
+    <div class="section">
 
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="title"> Software Development Skills </h3>
+                <ngb-tabset [justify]="'center'" type="pills"
+                    class="nav nav-pills nav-pills-primary  nav-pills-just-icons justify-content-center tab-space">
+                    <ngb-tab>
+                        <ng-template ngbTabTitle>
+                            <i class="now-ui-icons design-2_ruler-pencil" placement="top" ngbTooltip="Front-End"></i>
+                        </ng-template>
+                        <ng-template ngbTabContent>
+                            <div class="row">
+                                <div class="col-md-12 ml-auto mr-auto">
+                                    <div class="card card-background card-raised">
+                                        <div class="card-body">
+                                            <h1 class="title nz-white">Frontend</h1>
+                                            <mat-chip-list>
+                                                <mat-chip selected color="primary">Angular</mat-chip>
+                                                <mat-chip selected color="primary">JavaScript</mat-chip>
+                                                <mat-chip selected color="accent"> React </mat-chip>
+                                                <mat-chip color="accent" selected>HTML</mat-chip>
+                                                <mat-chip color="accent" selected>SASS</mat-chip>
+                                                <mat-chip color="accent" selected>Bootstrap</mat-chip>
+                                                <mat-chip color="accent" selected>Angular Material</mat-chip>
+                                                <mat-chip color="accent" selected>JQuery</mat-chip>
+                                            </mat-chip-list>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </ng-template>
+                    </ngb-tab>
+                    <ngb-tab>
+                        <ng-template ngbTabTitle>
+                            <i class="now-ui-icons ui-2_settings-90" placement="top" ngbTooltip="Back-End"></i>
+                        </ng-template>
+                        <ng-template ngbTabContent>
+                            <div class="row">
+                                <div class="col-md-12 ml-auto mr-auto">
+                                    <div class="card card-background card-background-product card-raised">
+                                        <div class="card-body">
+                                            <h1 class="title nz-white">Backend</h1>
+                                            <mat-chip-list>
+                                                <mat-chip selected color="primary">Node</mat-chip>
+                                                <mat-chip selected color="primary">Express</mat-chip>
+                                                <mat-chip selected color="primary"> Firebase </mat-chip>
+                                                <mat-chip color="accent" selected>C# - in progress</mat-chip>
+                                                <mat-chip color="accent" selected>.NET Core - in progress</mat-chip>
+                                                <mat-chip color="accent" selected>Mongo</mat-chip>
+                                                <mat-chip color="accent" selected>SQL</mat-chip>
+                                                <mat-chip color="accent" selected>PHP</mat-chip>
+                                                <mat-chip color="accent" selected>Python</mat-chip>
+                                                <mat-chip color="accent" selected>Lua</mat-chip>
+                                            </mat-chip-list>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </ng-template>
+                    </ngb-tab>
+                    <ngb-tab>
+
+                        <ng-template ngbTabTitle>
+                            <i class="now-ui-icons tech_laptop" placement="top" ngbTooltip="CMS & SDK & MISC"></i>
+                        </ng-template>
+                        <ng-template ngbTabContent>
+                            <div class="row">
+                                <div class="col-md-12 ml-auto mr-auto">
+                                    <div class="card card-background card-raised">
+                                        <div class="card-body">
+                                                <h1 class="title nz-white">CMS & SDK & MISC</h1>
+                                                <mat-chip-list>
+                                                    <mat-chip selected color="primary">Wordpress</mat-chip>
+                                                    <mat-chip selected color="accent">Corona SDK</mat-chip>
+                                                    <mat-chip selected color="accent"> Ionic </mat-chip>
+                                                    <mat-chip color="accent" selected>Adobe XD</mat-chip>
+                                                    <mat-chip color="accent" selected>Adobe Photoshop</mat-chip>
+                                                    <mat-chip color="accent" selected>Adobe Illustrator</mat-chip>
+                                                    <mat-chip color="accent" selected>Adobe Indesign</mat-chip>
+                                                </mat-chip-list>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </ng-template>
+                    </ngb-tab>
+                </ngb-tabset>
+            </div>
+        </div>
+
+    <!-- end paste-->
+    <div class="section section-basic-components" id='nz-about-me-section'>
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 col-md-4 mx-auto">
@@ -31,6 +124,26 @@
                         <img class="linkedin-btn-img" src="assets/img/mongo-db-icon.png" alt="">
                     </div>
                 </div>
+            </div>
+        </div>
+
+
+        <!-- Project Grid Header Text-->
+        <div class="section section-sections" data-background-color="gray">
+            <div class="container">
+                <div class="col-md-8 ml-auto mr-auto">
+                    <div class="section-description text-center">
+                        <h2 class="title">Project Highlights</h2>
+                        <h5 class="description"> Most of these applications, I played a major role in development to
+                            completetion. Looking to help with future projects consiting of Angular with opportuntity to
+                            help in the backend. </h5>
+                        <!-- <a [routerLink]="['/sections']" class="btn btn-primary btn-round">View All Sections</a> -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-12 ml-auto mr-auto mx-auto">
+                <app-nzmodalprojects></app-nzmodalprojects>
             </div>
         </div>
 
@@ -88,25 +201,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-
-        <!-- Project Grid Header Text-->
-        <div class="section section-sections" data-background-color="gray">
-            <div class="container">
-                <div class="col-md-8 ml-auto mr-auto">
-                    <div class="section-description text-center">
-                        <h2 class="title">Project Highlights</h2>
-                        <h5 class="description"> Most of these applications, I played a major role in development to
-                            completetion. Looking to help with future projects consiting of Angular with opportuntity to
-                            help in the backend. </h5>
-                        <!-- <a [routerLink]="['/sections']" class="btn btn-primary btn-round">View All Sections</a> -->
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-12 ml-auto mr-auto mx-auto">
-                <app-nzmodalprojects></app-nzmodalprojects>
             </div>
         </div>
 
