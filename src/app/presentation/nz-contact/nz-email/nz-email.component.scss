@@ -11,15 +11,25 @@
 
 .showBackground{
     // position: fixed;
-    background-color: aquamarine;
+    background-color: black;
     border-radius: 25px;
     width: 450px;
-    transition: width 0.5s;
+    transition: width 0.25s;
     transition-timing-function: ease-out;
 }
 
+.buttonOnShowBackground{
+    padding-left: 0px
+}
+
+.email-iconOnShowBackground {
+    background-color: white;
+    padding: 9px;
+    margin-left: -11px;
+}
+
 .email-icon {
-    width: 5em;
+    width: 3em;
     cursor: pointer;
 }
 
@@ -41,6 +51,7 @@
 .email-text {
     font-weight: bold;
     font-size: 19px;
-    display:block;
-    text-align:center;
+    color:white;
+    // display:inline-block;
+    // text-align:center;
 }
