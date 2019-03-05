@@ -4,24 +4,35 @@ div#nz-presentation-wrapper .rellax-text-container {
 }
 
 div#nz-presentation-wrapper{
-    height: 140vh;
-    // background-color: black;
+    height: 246vh;
+    background: black;
+
+    // .page-header{
+    //     background-color: black;
+    // }
 
 
     .rellax-text-container{
         max-width: 1490px;
         margin-left: 349px;
+        top:15%;
+        padding-right: 10px;
     }
 
     h2.nz-intro-header {
         text-align: left;
         font-size: 108px;
-        // color:white;
+        color:white;
     }
     
     .presentation-page .section-basic-components .image-container, #nz-image-container {
         position: relative;
         top: -178px;
+    }
+
+    .nz-profile-header {
+        background-color: #f7f7f7;
+        margin-top: 543px;
     }
 
     .nz-community-icons {
@@ -39,11 +50,9 @@ div#nz-presentation-wrapper{
     }
     // Media Queries
     
-    @media (max-width: 768px){
-        .nz-intro-header{
-            font-size: 38px;
-        }
-    }
+    // @media (max-width: 768px){
+
+    // }
     
     
     @media screen and (min-width: 991px){
@@ -60,6 +69,14 @@ div#nz-presentation-wrapper{
         footer {
             height:950px;
         }
+
+        .rellax-text-container{
+            margin-left: 100px;
+            h2.nz-intro-header {
+                font-size:59px !important;
+            }
+        }
+
     }
     
     // Iphone Responsive
@@ -160,3 +177,4 @@ footer.footer {
         right:44px;
     }
 }
+
