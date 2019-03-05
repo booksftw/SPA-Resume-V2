@@ -3,7 +3,7 @@
     <img class="email-icon" [ngClass]="{'pos-center': center, 'pos-left': left}"
       src="assets/img/icons/email-black.svg" alt="email icon" (click)="isShown = !isShown">
   </button>
-  <p [ngClass]="{'pos-center': center, 'pos-left': left}" *ngIf="isShown" style="color:black;">
+  <p class="email-text" [ngClass]="{'pos-center': center, 'pos-left': left}" *ngIf="isShown" style="color:black;">
     nicholas.zachary@outlook.com</p>
 
   <!-- <button mat-icon-button>

@@ -62,7 +62,7 @@ div#nz-presentation-wrapper{
     
     @media screen and (min-width: 991px){
         .rellax-text-container{
-            margin-left: 100px;
+            // margin-left: 100px;
             h2.nz-intro-header {
                 font-size:89px;
             }
@@ -84,6 +84,11 @@ div#nz-presentation-wrapper{
             h2.nz-intro-header {
                 font-size:59px;
             }
+        }
+
+        .nz-phone-icon-col-container{
+            position: relative; 
+            left:100px;
         }
     }
     
@@ -159,6 +164,11 @@ div#nz-presentation-wrapper{
 
 div#nz-about-me-section{
     padding-bottom: 0px;
+}
+
+div#nzprofile .nz-about-me-description {
+    padding-right: 15px;
+    padding-left: 15px;
 }
 
 

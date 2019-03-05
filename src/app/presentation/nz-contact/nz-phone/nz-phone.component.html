@@ -3,6 +3,8 @@
     <img class="phone-icon" [ngClass]="{'pos-center': center, 'pos-left': left}" src="assets/img/icons/cell-black.svg"
       alt="phone icon" (click)="isShown = !isShown">
     </button>
-    <p [ngClass]="{'pos-center': center, 'pos-left': left}" *ngIf="isShown" style="color:black;">
-      1-250-415-5392</p>
+    <p class="phone-number" [ngClass]="{'pos-center': center, 'pos-left': left}" *ngIf="isShown" style="color:black;">
+      250<br>
+      415-5392
+    </p>
   </div>

@@ -4,7 +4,7 @@
 }
 
 .phone-icon {
-    width: 8em;
+    width: 6em;
     cursor: pointer;
 }
 
@@ -19,3 +19,15 @@
     text-align: left;
 }
 
+.phone-number {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+@media screen and (max-width: 990px){
+    .phone-container {
+        width: 100px;
+        position: relative;
+        left: 30px;
+    }
+}
