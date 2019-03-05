@@ -1,10 +1,25 @@
 .email-container {
+    display: block;
+    width:400px;
+}
+
+.is-fixed-email-container{
     display: inline-block;
-    width:300px;
+    width:100px;
+    transition: width 2s;
+}
+
+.showBackground{
+    // position: fixed;
+    background-color: aquamarine;
+    border-radius: 25px;
+    width: 450px;
+    transition: width 0.5s;
+    transition-timing-function: ease-out;
 }
 
 .email-icon {
-    width: 8em;
+    width: 5em;
     cursor: pointer;
 }
 
@@ -19,9 +34,13 @@
     text-align: left;
 }
 
+.pos-right {
+    display: inline;
+}
+
 .email-text {
     font-weight: bold;
-    font-size: 22px;
+    font-size: 19px;
 }
 
 @media screen and (max-width: 990px){

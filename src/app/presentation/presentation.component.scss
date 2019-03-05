@@ -1,3 +1,9 @@
+.nz-fixed-sidebar {
+    position: fixed;
+    top: 10px;
+    z-index: 100000;
+}
+
 div#nz-presentation-wrapper .rellax-text-container {
     max-width: 1490px;
     margin-left: 349px;
@@ -48,8 +54,15 @@ div#nz-presentation-wrapper{
         margin-right: auto;
         width: 50%;
     }
-    // Media Queries
+
+
+        .nz-sidebar-phone {
+            position: relative;
+            right: 3px;
+        }
     
+    
+    // Media Queries
     @media screen and (max-width: 990px){
         .rellax-text-container{
             margin-left: 100px;
@@ -57,8 +70,11 @@ div#nz-presentation-wrapper{
                 font-size:69px;
             }
         }
+        // .nz-footer-contact {
+        //     position: relative;
+        //     right:100px;
+        // }
     }
-    
     
     @media screen and (min-width: 991px){
         .rellax-text-container{
@@ -67,7 +83,6 @@ div#nz-presentation-wrapper{
                 font-size:89px;
             }
         }
-
     }
 
     @media screen and (max-width: 576px){
@@ -173,7 +188,7 @@ div#nzprofile .nz-about-me-description {
 
 
 
-footer.footer {
+footer#footer {
     height: 850px;
     background-color: #a9cee1;
     
@@ -190,9 +205,13 @@ footer.footer {
         top: -100px;
     }
 
-    .nz-letsconnect {
+    .nz-letsconnect img, .nz-letsconnect .nz-footer-title {
         position: relative;
         right:44px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
+
 

@@ -113,7 +113,7 @@
 
     </div>
     <!-- Footer -->
-    <footer class="footer">
+    <footer id="footer">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 nz-letsconnect">
@@ -121,13 +121,19 @@
                     <h4 class="title nz-footer-title">Let's Connect</h4>
                 </div>
             </div>
-            <div class="row">
+            <div class="row nz-footer-contact">
                 <div class="col-4 col-sm-5 col-md-6">
-                    <app-nz-email center="true"></app-nz-email>
+                    <app-nz-email class='text-center' center="true"></app-nz-email>
                 </div>
-                <div class="col-4 col-sm-5 col-md-6re nz-phone-icon-col-container">
-                    <app-nz-phone center="true"></app-nz-phone>
+                <div class="col-4 col-sm-5 col-md-6re">
+                    <app-nz-phone class='text-center' center="true"></app-nz-phone>
                 </div>
             </div>
         </div>
     </footer>
+
+
+<div class="nz-fixed-sidebar">
+    <app-nz-email right="true" isFixed="true"></app-nz-email> <br>
+    <app-nz-phone class="nz-sidebar-phone" right="true" isFixed="true"></app-nz-phone>
+</div>

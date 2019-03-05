@@ -1,6 +1,26 @@
 .phone-container {
-    display: inline-block;
-    width:300px;
+    display: block;
+    width:400px;
+}
+
+.is-fixed-phone-container{
+    display: block;
+    width:100px;
+    transition: width 2s
+}
+
+.showBackground{
+    // position: fixed;
+    background-color: aquamarine;
+    border-radius: 25px;
+    width:310px;
+    transition: width 0.5s;
+    transition-timing-function: ease-out;
+}
+
+.isFixed {
+    position: fixed;
+    top: 115px;   
 }
 
 .phone-icon {
@@ -12,6 +32,8 @@
     display: block;
     margin: 0 auto;
     text-align: center;
+    top: -26px;
+    position: relative;
 }
 
 .pos-left {
@@ -19,15 +41,17 @@
     text-align: left;
 }
 
+.pos-right {
+    display: inline;
+}
+
 .phone-number {
     font-weight: bold;
-    font-size: 22px;
+    font-size: 19px;
 }
 
 @media screen and (max-width: 990px){
-    .phone-container {
-        width: 100px;
-        position: relative;
-        left: 30px;
-    }
+    // .phone-container {
+    //     width: 100px;
+    // }
 }

@@ -9,12 +9,15 @@ export class NzContactComponent implements OnInit {
   isShown = false;
   @Input() center = false;
   @Input() left = false;
+  @Input() right = false;
+  @Input() isFixed = false;
 
   constructor() { }
 
   ngOnInit() {
   }
 
+  // ? Do I need this ?
   toggleVisibility( ) {
     this.isShown = !this.isShown;
   }
