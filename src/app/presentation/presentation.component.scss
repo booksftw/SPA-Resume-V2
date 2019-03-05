@@ -60,6 +60,54 @@ div#nz-presentation-wrapper{
             position: relative;
             right: 3px;
         }
+
+    // Paste from nz profile move
+    .description, .title, .icon, .icon-warning, h5.info-title, .mat-tab-label .mat-tab-label-content {
+        font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
+        color:grey;
+    }
+    .mat-tab-group{
+        width: 572px;
+    }
+
+    .mat-tab-label {
+        border: 2px solid black;
+        height: 125px;
+        justify-content: space-between;
+        border-radius: 50%;
+    }
+
+    .mat-tab-label-content{
+        margin: 0 auto;
+    }
+    
+    .now-ui-icons{
+        font-size:65px;
+    }
+
+    .card-description, .mat-tab-body-content{
+        color: rgb(179, 179, 179);
+        font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
+    }
+
+    .nz-center-tab-group{
+        width: 520px;
+        margin: 0 auto;
+    }
+
+    .nav-pills.nav-pills-primary .nav-item .nav-link.active, .nav-pills.nav-pills-primary .nav-item .nav-link.active:focus, .nav-pills.nav-pills-primary .nav-item .nav-link.active:hover{
+        background-color:deeppink !important;
+    }
+
+    .nz-white{
+        color:white;
+    }
+
+    .card-background .card-body {
+        bottom: 26px;
+    }
+
+    // end paste
     
     
     // Media Queries
@@ -181,8 +229,8 @@ div#nz-presentation-wrapper{
     }
 }
 
-div#nz-about-me-section{
-    padding-bottom: 0px;
+div#nz-software-dev-section{
+   background:none;
 }
 
 div#nzprofile .nz-about-me-description {
