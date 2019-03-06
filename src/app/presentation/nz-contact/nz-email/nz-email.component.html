@@ -2,10 +2,16 @@
   'showBackground': isShown && isFixed,
   'is-fixed-email-container': isFixed,
   'email-container': !isFixed }">
-  <button mat-button [ngClass]="{'buttonOnShowBackground': isShown && isFixed}">
+  <button *ngIf="isFixed; else standardDesign" mat-button [ngClass]="{'buttonOnShowBackground': isShown && isFixed}">
     <img class="email-icon" [ngClass]="{'pos-center': center, 'pos-left': left, 'email-iconOnShowBackground': isShown && isFixed}"
       src="assets/img/icons/email-black.svg" alt="email icon" (click)="isShown = !isShown">
   </button>
+  <ng-template #standardDesign>
+    <button mat-button [ngClass]="{'buttonOnShowBackground': isShown && isFixed}">
+      <img class="email-icon" [ngClass]="{'pos-center': center, 'pos-left': left, 'email-iconOnShowBackground': isShown && isFixed}"
+        src="assets/img/icons/email-white.jpg" alt="email icon" (click)="isShown = !isShown">
+    </button>
+  </ng-template>
   <p class="email-text" [ngClass]="{'pos-center': center, 'pos-left': left, 'pos-right': right, 'email-text-sticky': isShown && isFixed}" *ngIf="isShown" >
     nicholas.zachary@outlook.com</p>
 </div>

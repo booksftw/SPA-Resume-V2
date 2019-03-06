@@ -3,10 +3,17 @@
 'isFixed': isFixed,
 'is-fixed-phone-container': isFixed,
 'phone-container': !isFixed }">
-  <button mat-button [ngClass]="{'buttonOnShowBackground': isShown && isFixed}">
+  <button *ngIf="isFixed;else standardDesign" mat-button [ngClass]="{'buttonOnShowBackground': isShown && isFixed}">
     <img class="phone-icon" [ngClass]="{'pos-center': center, 'pos-left': left, 'phone-iconOnShowBackground': isShown && isFixed}" src="assets/img/icons/cell-black.svg"
       alt="phone icon" (click)="isShown = !isShown">
   </button>
+  <ng-template #standardDesign>
+    <button mat-button [ngClass]="{'buttonOnShowBackground': isShown && isFixed}">
+      <img class="phone-icon" [ngClass]="{'pos-center': center, 'pos-left': left, 'phone-iconOnShowBackground': isShown && isFixed}" src="assets/img/icons/cell-white.png"
+        alt="phone icon" (click)="isShown = !isShown">
+    </button>
+  </ng-template>
+  
   <p class="phone-number" [ngClass]="{'pos-center': center, 'pos-left': left, 'pos-right': right, 'phone-number-sticky': isShown && isFixed}" *ngIf="isShown">
     250-415-5392
   </p>
