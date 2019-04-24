@@ -7,6 +7,7 @@ import { PresentationComponent } from './presentation/presentation.component';
 
 const routes: Routes = [
     { path: '', pathMatch: 'full', component: PresentationComponent },
+    { path: '**', component: PresentationComponent }
     // { path: '', redirectTo: 'resume', pathMatch: 'full' },
     // { path: 'resume',         component: PresentationComponent },
 ];
